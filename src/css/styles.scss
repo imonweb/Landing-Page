@@ -16,6 +16,16 @@ body {
   margin: 0 auto;
   padding-left: 128px;
   padding-right: 128px;
+
+  @media (max-width: 768px){
+     padding-left: 64px;
+     padding-right: 64px;
+  }
+
+  @media (max-width: 768px){
+    font-size: 32px;
+  
+  }
 }
 
 section {
@@ -44,6 +54,10 @@ section {
   text-transform: uppercase;
   font-weight: 700;
   cursor: pointer;
+
+  @media (max-width: 768px){
+    font-size: 16px;
+  }
 }
 
 img {
@@ -80,6 +94,10 @@ header {
       display: grid;
       grid-gap: 16ppx;
       grid-template-columns: repeat(4, auto);
+
+      @media (max-width: 768px){
+              display: none;
+           }
 
       a {
         color: inherit;
@@ -122,6 +140,10 @@ main {
       h1 {
         font-size: 72px;
         margin-bottom: 32px;
+        @media (max-width: 768px){
+            font-size: 32px;
+          
+           }
 
         span {
           color: #ff9fdb;
@@ -132,6 +154,11 @@ main {
          font-size: 36px;
          font-weight: 400;
          margin-bottom: 32px;
+
+         @media (max-width: 768px){
+            font-size: 20px;
+          
+           }
       }
     }
   } /*  banner */
@@ -148,6 +175,10 @@ main {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 16px;
+
+        @media (max-width: 768px){
+          grid-template-columns: repeat(1, 1fr);
+        }
 
         .service {
           background-color: #fff;
@@ -167,6 +198,18 @@ main {
           } /*  img-box */
           .content {
             padding: 16px;
+            p {
+             @media (max-width: 768px){
+            font-size: 16px;
+            }
+          }
+
+          h3 {
+            @media (max-width: 768px){
+            font-size: 26px;
+             }
+           
+           }
           }
         } /*  service */
       }
@@ -182,6 +225,10 @@ main {
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 16px;
       margin-bottom: 32px;
+
+      @media (max-width: 768px){
+        grid-template-columns: repeat(2, 1fr );
+      }
 
       .project {
         padding: 16px;
@@ -202,11 +249,18 @@ main {
           h3 {
             font-size: 32px;
             margin-bottom: 16px;
+            @media (max-width: 768px){
+              font-size: 28px;
+           }
           }
 
           p {
             font-size: 18px;
             margin-bottom: 16px;
+
+            @media (max-width: 768px){
+              font-size: 16px;
+           }
           }
         }
 
@@ -276,4 +330,10 @@ main {
       }
     }
   } /*  contact */
+}
+
+@media (max-width: 768px){
+  .hide-mob {
+    display: none;
+  }     
 }
