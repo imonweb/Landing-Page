@@ -1,0 +1,274 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Fira",sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-left: 128px;
+  padding-right: 128px;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+  font-size: 36px;
+  color: #313131;
+}
+
+.button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  display: inline-block;
+  color: #fff;
+  background-color: #ff9fdb;
+  padding: 12px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+header .container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .container h2 {
+  color: inherit;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+header .container h2 span {
+  font-weight: 600;
+}
+
+header .container nav {
+  display: grid;
+  grid-gap: 16ppx;
+  grid-template-columns: repeat(4, auto);
+}
+
+header .container nav a {
+  color: inherit;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 0 .5rem;
+}
+
+main {
+  /*  banner */
+  /* services */
+  /*  projects */
+  /*  contact */
+}
+
+main section.banner {
+  color: #fff;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../images/header.jpg");
+  background-position: top right;
+  background: cover;
+}
+
+main section.banner:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #12002f;
+  opacity: 0.7;
+}
+
+main section.banner .container {
+  position: relative;
+  z-index: 1;
+}
+
+main section.banner .container h1 {
+  font-size: 72px;
+  margin-bottom: 32px;
+}
+
+main section.banner .container h1 span {
+  color: #ff9fdb;
+}
+
+main section.banner .container h3 {
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+
+main .services {
+  background-color: eee;
+}
+
+main .services .container {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+main .services .container .services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 16px;
+  /*  service */
+}
+
+main .services .container .services-grid .service {
+  background-color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  /*  img-box */
+}
+
+main .services .container .services-grid .service .img-box {
+  display: block;
+  width: 100%;
+  border-bottom: 5px solid #ff9fdb;
+}
+
+main .services .container .services-grid .service .img-box .img {
+  width: 100%;
+  height: 128px;
+  object-fit: cover;
+}
+
+main .services .container .services-grid .service .content {
+  padding: 16px;
+}
+
+main .projects {
+  padding-top: 64px;
+  padding-bottom: 62px;
+}
+
+main .projects .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px;
+  margin-bottom: 32px;
+}
+
+main .projects .projects-grid .project {
+  padding: 16px;
+  background-image: url("../images/project-img.jpg");
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+main .projects .projects-grid .project:nth-child(2) {
+  background-image: url("../images/service-1.jpg");
+}
+
+main .projects .projects-grid .project .content {
+  opacity: 0;
+  color: #fff;
+  padding: 16px;
+  background-color: rgba(64, 39, 68, 0.8);
+}
+
+main .projects .projects-grid .project .content h3 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+main .projects .projects-grid .project .content p {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+main .projects .projects-grid .project:hover .content {
+  opacity: 1;
+  transition: 0.4s;
+}
+
+main .projects .center {
+  text-align: center;
+}
+
+main .contact {
+  background-color: #9b75d7;
+}
+
+main .contact .container h2 {
+  color: #fff;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+main .contact .container form {
+  min-width: 80px;
+  display: block;
+  margin: auto 0;
+  min-width: 600px;
+}
+
+main .contact .container form .form-grid {
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+main .contact .container form .form-grid .form-element, main .contact .container form .form-grid .form-area {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  font-size: 20px;
+  color: #313131;
+}
+
+main .contact .container form .form-grid .form-element::placeholder, main .contact .container form .form-grid .form-area::placeholder {
+  color: #aaa;
+}
+
+main .contact .container form .form-grid .form-area {
+  grid-column: 1/-1;
+}
+
+main .contact .container form .right-align {
+  text-align: right;
+}
+/*# sourceMappingURL=styles.css.map */
