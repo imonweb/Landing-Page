@@ -16,6 +16,7 @@ body {
   margin: 0 auto;
   padding-left: 128px;
   padding-right: 128px;
+  align-items: center;
 
   @media (max-width: 768px){
      padding-left: 64px;
@@ -107,6 +108,13 @@ header {
       }
     }
   }
+  &.is-scrolling {
+    background-color: #12002f;
+    .container {
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+  }
 }
 
 main {
@@ -179,7 +187,7 @@ main {
         @media (max-width: 768px){
           grid-template-columns: repeat(1, 1fr);
         }
-
+ 
         .service {
           background-color: #fff;
           border-radius: 16px;
@@ -227,7 +235,7 @@ main {
       margin-bottom: 32px;
 
       @media (max-width: 768px){
-        grid-template-columns: repeat(2, 1fr );
+        grid-template-columns: repeat(1, 1fr );
       }
 
       .project {
@@ -300,6 +308,10 @@ main {
           grid-template-columns: repeat(2, 1fr );
           margin-bottom: 16px;
 
+          @media (max-width: 768px){
+            grid-template-columns: repeat(1, 1fr);
+          }
+
           .form-element, .form-area {
             appearance: none;
             border:none;
@@ -322,6 +334,7 @@ main {
           .form-area {
 						grid-column: 1/-1;
 					}
+          
         }
 
         .right-align {
